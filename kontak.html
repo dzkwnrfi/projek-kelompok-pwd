@@ -32,6 +32,25 @@
         <p>Katalog Film adalah project contoh untuk tugas kelompok mata kuliah Pemrograman Web Dasar. Website ini dibuat dengan HTML, CSS, dan JavaScript sederhana.</p>
         <p>Form di samping hanya contoh. Data yang diisi akan ditampilkan di halaman ini dan tidak dikirim ke server.</p>
       </div>
+      <div class="form-box">
+        <h2>Kirim Saran Film</h2>
+        <form id="form-saran">
+          <label for="nama">Nama</label>
+          <input id="nama" name="nama" type="text" placeholder="Nama kamu" required maxlength="60">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="nama@email.com" required>
+
+          <label for="judul-film">Judul film</label>
+          <input id="judul-film" name="judul" type="text" placeholder="Judul film pilihanmu" required maxlength="100">
+
+          <label for="alasan">Alasan</label>
+          <textarea id="alasan" name="alasan" rows="4" placeholder="Kenapa film ini menarik?" required maxlength="500"></textarea>
+
+          <button class="button" type="submit">Tampilkan Saran</button>
+        </form>
+        <p id="pesan-form" role="status" aria-live="polite" hidden></p>
+      </div>
     </section>
   </main>
 
