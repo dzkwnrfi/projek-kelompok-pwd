@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Film - Katalog Film</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="index.html">Katalog Film</a>
+      <nav aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="film.html" aria-current="page">Daftar Film</a>
+        <a href="genre.html">Genre</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="page-title">
+      <h1>Daftar Film</h1>
+      <p>Cari judul atau pilih genre untuk menemukan film.</p>
+    </header>
+
+    <section class="section" aria-labelledby="koleksi-film">
+      <h2 id="koleksi-film" class="visually-hidden">Koleksi Film</h2>
+      <div class="filter-bar">
+        <div><label for="cari-film">Cari judul</label><input id="cari-film" type="search" placeholder="Contoh: Dune"></div>
+        <div><label for="pilih-genre">Pilih genre</label><select id="pilih-genre"><option value="semua">Semua Genre</option><option value="fiksi">Fiksi Ilmiah</option><option value="drama">Drama</option><option value="aksi">Aksi</option><option value="animasi">Animasi</option></select></div>
+      </div>
+      <p id="jumlah-film" role="status" aria-live="polite">6 film ditemukan</p>
+      <div class="card-grid">
+        <article class="film-card" data-judul="dune: part two" data-genre="fiksi">
+          <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg" alt="Poster Dune: Part Two" width="342" height="513" loading="lazy">
+          <div class="card-content"><h3>Dune: Part Two</h3><p>Fiksi Ilmiah · 2024</p><p>Paul Atreides berjuang bersama bangsa Fremen di Arrakis.</p></div>
+        </article>
+        <article class="film-card" data-judul="interstellar" data-genre="fiksi">
+          <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Poster Interstellar" width="342" height="513" loading="lazy">
+          <div class="card-content"><h3>Interstellar</h3><p>Fiksi Ilmiah · 2014</p><p>Seorang ayah pergi ke luar angkasa untuk mencari tempat tinggal baru bagi manusia.</p></div>
+        </article>
+        <article class="film-card" data-judul="parasite" data-genre="drama">
+          <img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Poster Parasite" width="342" height="513" loading="lazy">
+          <div class="card-content"><h3>Parasite</h3><p>Drama · 2019</p><p>Kisah dua keluarga yang hidup dalam kondisi ekonomi sangat berbeda.</p></div>
+        </article>
+        <article class="film-card" data-judul="la la land" data-genre="drama">
+          <img src="https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg" alt="Poster La La Land" width="342" height="513" loading="lazy">
+          <div class="card-content"><h3>La La Land</h3><p>Drama · 2016</p><p>Seorang pianis dan seorang aktris mengejar mimpi mereka di Los Angeles.</p></div>
+        </article>
+        <article class="film-card" data-judul="the batman" data-genre="aksi">
+          <img src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="Poster The Batman" width="342" height="513" loading="lazy">
+          <div class="card-content"><h3>The Batman</h3><p>Aksi · 2022</p><p>Batman menyelidiki rangkaian kejahatan di kota Gotham.</p></div>
+        </article>
+        <article class="film-card" data-judul="spirited away" data-genre="animasi">
+          <img src="https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg" alt="Poster Spirited Away" width="342" height="513" loading="lazy">
+          <div class="card-content"><h3>Spirited Away</h3><p>Animasi · 2001</p><p>Chihiro mencari jalan pulang dari dunia roh yang misterius.</p></div>
+        </article>
+      </div>
+      <p id="film-kosong" class="empty-message" hidden>Tidak ada film yang cocok. Coba kata kunci atau genre lain.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© 2026 Katalog Film · Project contoh Pemrograman Web Dasar</p><p>Poster film dari <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDB</a>.</p></div>
+  </footer>
+</body>
+</html>
