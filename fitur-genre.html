@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genre - Katalog Film</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="index.html">Katalog Film</a>
+      <nav aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="film.html">Daftar Film</a>
+        <a href="genre.html" aria-current="page">Genre</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="page-title">
+      <h1>Genre Film</h1>
+      <p>Setiap genre punya jenis cerita yang berbeda. Pilih salah satu untuk melihat filmnya.</p>
+    </header>
+
+    <section class="section" aria-labelledby="kategori-genre">
+      <h2 id="kategori-genre">Pilih Genre</h2>
+      <div class="genre-grid">
+        <article class="genre-card">
+          <h3>Fiksi Ilmiah</h3>
+          <p>Cerita tentang teknologi, masa depan, atau perjalanan luar angkasa.</p>
+          <p>Contoh: Dune: Part Two dan Interstellar.</p>
+          <a href="film.html?genre=fiksi">Lihat film Fiksi Ilmiah →</a>
+        </article>
+        <article class="genre-card">
+          <h3>Drama</h3>
+          <p>Cerita yang dekat dengan kehidupan dan hubungan antarmanusia.</p>
+          <p>Contoh: Parasite dan La La Land.</p>
+          <a href="film.html?genre=drama">Lihat film Drama →</a>
+        </article>
+        <article class="genre-card">
+          <h3>Aksi</h3>
+          <p>Cerita dengan petualangan, ketegangan, dan banyak adegan seru.</p>
+          <p>Contoh: The Batman.</p>
+          <a href="film.html?genre=aksi">Lihat film Aksi →</a>
+        </article>
+        <article class="genre-card">
+          <h3>Animasi</h3>
+          <p>Cerita yang disampaikan melalui gambar bergerak dan imajinasi.</p>
+          <p>Contoh: Spirited Away.</p>
+          <a href="film.html?genre=animasi">Lihat film Animasi →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© 2026 Katalog Film · Project contoh Pemrograman Web Dasar</p><p>Poster film dari <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDB</a>.</p></div>
+  </footer>
+</body>
+</html>
